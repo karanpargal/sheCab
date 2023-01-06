@@ -1,0 +1,13 @@
+{
+  "name": "sheCab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/karanpargal/sheCab.git",
+  "author": "Karan Pargal <karanpargal007@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hardhat": "^2.12.5",
+    "node": "^19.3.0",
+    "nodejs": "^0.0.0"
+  }
+}
