@@ -6,7 +6,7 @@ contract Cab{
     address public customer;
     address public driver;
     bool public isBooked = false;
-    mapping (address => uint) balancesDriver;
+    mapping (address => uint) public balancesDriver;
 
     modifier onlyCustomer() {
         require(msg.sender == customer, "Only customer");
@@ -15,6 +15,10 @@ contract Cab{
     modifier onlyDriver() {
         require(msg.sender == driver, "Only driver");
         _;
+    }
+
+    function addCustomer( address _customer) public {
+        customer = _customer;
     }
         
     function addDriver( address _driver) public {
@@ -25,8 +29,8 @@ contract Cab{
     function bookCab() public payable onlyCustomer returns(bool){
         require(msg.value < charges, "Insufficient balance");
         require(isBooked == false, "Cab already booked");
-        isBooked = true;
         balancesDriver[driver] += charges;
+        isBooked = true;
         return true;
     } 
 
