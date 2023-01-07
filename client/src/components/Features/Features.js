@@ -5,13 +5,13 @@ const Features = () => {
   const FeaturesData = [
     {
       Icon: "",
-      Heading: "Female Driver",
+      Heading: "Driver Policy",
       Description:
-        "To empower women and to provide opportunities, She-Cab provides you with trained Female Drivers",
+        "To empower women and to ensure safety, She-Cab provides you with trained Female Drivers",
     },
     {
       Icon: "",
-      Heading: "Female Passenger",
+      Heading: "Passenger Policy",
       Description:
         "To ensure your comfort and safety She-Cab only allows Female Passengers",
     },
