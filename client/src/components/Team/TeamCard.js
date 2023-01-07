@@ -10,7 +10,7 @@ const TeamCard = (props) => {
           className="self-center w-60 h-60 rounded-xl"
         />
         <div >
-          <h1 className="font-bold text-darkerIndigo ml-1 text-2xl text-center py-1">
+          <h1 className="font-bold text-darkerIndigo ml-1 mt-4 text-2xl text-center py-1">
             {props.teamData.name}
           </h1>
           <div className="text-xl text-darkerIndigo m-0 text-center">
