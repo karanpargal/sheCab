@@ -1,6 +1,65 @@
-import React from "react";
+import React ,{ useState, useRef, useEffect} from "react";
+import Web3Modal from "web3modal";
+import { providers, Contract } from "ethers";
 
 const Navbar = () => {
+  const [walletConnected, setWalletConnected] = useState(false);
+  const [driver, setDriver] = useState(false);
+  const [customer, setCustomer] = useState(false);
+
+  const setDriverWallet = () => {
+    setDriver(true);
+    connectWallet();
+    document.getElementById("driver").innerHTML = "Connected as Driver";
+  };
+  
+  const setCustomerWallet = () => {
+    setCustomer(true);
+    connectWallet();
+    document.getElementById("customer").innerHTML = "Connected as Customer";
+  };
+
+  const web3ModalRef = useRef();
+
+  const getProviderOrSigner = async (needSigner = false) => {
+    const provider = await web3ModalRef.current.connect();
+    const web3Provider = new providers.Web3Provider(provider);
+    const { chainId } = await web3Provider.getNetwork();
+    console.log(chainId);
+    if (chainId !== 80001) {
+      window.alert("Change the network to mumbai");
+      throw new Error("Change network to mumbai");
+    }
+
+    if (needSigner) {
+      const signer = web3Provider.getSigner();
+      return signer;
+    }
+    return web3Provider;
+  };
+
+  const connectWallet = async () => {
+    try {
+      await getProviderOrSigner();
+      setWalletConnected(true);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+        
+
+  useEffect(() => {
+    if (!walletConnected) {
+      web3ModalRef.current = new Web3Modal({
+        network: "maticmum",
+        providerOptions: {},
+        disableInjectedProvider: false,
+      });
+      connectWallet();
+    }
+  }, [walletConnected]);
+
+
   return (
     <nav class="bg-OperaMauve px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
       <div class="container flex flex-wrap items-center justify-between mx-auto">
@@ -10,13 +69,17 @@ const Navbar = () => {
 
         <div class="flex space-x-4 md:order-2">
           <button
+            id = "driver"
             type="button"
+            onClick={setDriverWallet}
             class="text-Black p-4 bg-LavenderBlue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
             Driver
           </button>
           <button
             type="button"
+            id = "customer"
+            onClick={setCustomerWallet}
             class="text-Black bg-LavenderBlue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
           >
             Customer
