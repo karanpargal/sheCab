@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors:{
         LavenderBlue:'#CCD5FF',
+        OperaMauve:'#C884A6',
+        PinkLavender:'#E7BBE3',
       },
     },
   },
