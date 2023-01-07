@@ -18,8 +18,8 @@ const Landing = () => {
   };
 
   return (
-    <div>
-      <div className="flex w-96 h-96 text-black mt-20 " id="landing">
+    <div className="bg-LavenderBlue">
+      <div className="flex text-black p-20 pt-60 pb-48 items-center justify-around justify-items-center justify-self-center" id="landing">
         <div className="mt-3 ">
           <h1 className=" text-4xl ml-3">Let's make friends and ride safe!</h1>
           <h2 className=" mt-2 ml-3 text-base">
@@ -35,6 +35,12 @@ const Landing = () => {
           >
             Book Cab
           </button>
+        </div>
+        <div className="mt-3">
+          <img
+            className="w-96 h-96"
+            src="https://images.unsplash.com/photo-1616166330073-8e1b2f9b9b1f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          />
         </div>
       </div>
       {renderCabBooking()}

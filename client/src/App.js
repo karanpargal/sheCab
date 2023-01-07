@@ -11,7 +11,6 @@ function App() {
     <div className='bg-LavenderBlue'>
       <Navbar />
       <Landing />
-      {/* <BookCab /> */}
     </div>
   );
 }
