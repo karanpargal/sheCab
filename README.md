@@ -7,7 +7,6 @@ We saw that in our college, female students usually avoid travelling in night du
 On our web-application, a female customer can find a cab to her destination and get a cab with female driver. It increases the saftey measures for women and allow them to travel safely. Also, a female driver can get her ride and earn money.
 
 ## How the WebApp Looks 🤜🔥🤛
-![Logo](images/Logo.png)
 ![Front-end](images/frontend.png)
 
 
