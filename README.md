@@ -1,7 +1,7 @@
 ![SheBuilds](images/Cover.png) 
 
 ## Inspiration💡
-With expense split apps gaining more and more popularity, we aimed to design an expense split web application that would use blockchain to store the data instead of centralised database.  
+We saw that in our college, female students usually avoid travelling in night due to cab issues which makes it harder for them. So, we decided to make an all female cab platform so they can travel safely.  
 
 ## What it does 🧭
 On our web-application, a female customer can find a cab to her destination and get a cab with female driver. It increases the saftey measures for women and allow them to travel safely. Also, a female driver can get her ride and earn money.
