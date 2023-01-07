@@ -2,9 +2,8 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
-import BookCab from './components/Platform/BookCab';
-import ReactDOM from "react-dom/client";
-import GetRide from './components/Platform/GetRide';
+import Features from './components/Features/Features';
+
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
       <Navbar />
       <Landing />
       {/* <GetRide /> */}
+      <Features />
     </div>
   );
 }

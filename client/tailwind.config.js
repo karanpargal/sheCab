@@ -7,6 +7,8 @@ module.exports = {
         LavenderBlue:'#CCD5FF',
         OperaMauve:'#C884A6',
         PinkLavender:'#E7BBE3',
+        SlateBlue:'#817DFF',
+        RoseBonbon:'#F04B9E',
       },
     },
   },
