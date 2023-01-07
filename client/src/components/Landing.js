@@ -65,6 +65,7 @@ const Landing = () => {
         </div>
       </div>
       {renderCabBooking()}
+      {renderRidePickup()}
     </div>
   );
 };

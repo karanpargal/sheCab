@@ -12,7 +12,7 @@ function App() {
     <div className='bg-LavenderBlue'>
       <Navbar />
       <Landing />
-      <GetRide />
+      {/* <GetRide /> */}
     </div>
   );
 }
