@@ -61,9 +61,9 @@ const Navbar = () => {
 
 
   return (
-    <nav class="bg-OperaMauve px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <h1 class="self-center text-xl font-semibold whitespace-nowrap ">
+    <nav class="m-0 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 backdrop-blur-sm ">
+      <div class="container flex flex-wrap items-center justify-between mx-auto my-0">
+        <h1 class="self-center text-3xl font-semibold whitespace-nowrap ">
           SHE CAB
         </h1>
 
@@ -72,7 +72,7 @@ const Navbar = () => {
             id = "driver"
             type="button"
             onClick={setDriverWallet}
-            class="text-Black p-4 bg-LavenderBlue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            class="text-Black  bg-white hover:text-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-8 py-2 text-center mr-3 md:mr-0"
           >
             Driver
           </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
             type="button"
             id = "customer"
             onClick={setCustomerWallet}
-            class="text-Black bg-LavenderBlue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0"
+            class="text-Black bg-white hover:text-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-2 text-center mr-3 md:mr-0"
           >
             Customer
           </button>
@@ -111,37 +111,37 @@ const Navbar = () => {
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+          <ul class="flex flex-col p-3 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:pt-2 md:text-sm md:font-medium md:border-0 ">
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                class="block py-2 text-lg pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                href="#features"
+                class="block py-2 pl-3 text-lg pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
               >
-                About
+                Features
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                href="#future"
+                class="block py-2 pl-3 text-lg pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
               >
-                Services
+                Future Scope
               </a>
             </li>
             <li>
               <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                href="#team"
+                class="block py-2 pl-3 text-lg pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
               >
-                Contact
+                Team
               </a>
             </li>
           </ul>

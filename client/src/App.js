@@ -2,17 +2,18 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
-import BookCab from './components/Platform/BookCab';
-import ReactDOM from "react-dom/client";
-import GetRide from './components/Platform/GetRide';
+import Features from './components/Features/Features';
+import Team from './components/Team/Team';
+
 
 
 function App() {
   return (
-    <div className='bg-LavenderBlue'>
+    <div className='bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-pink-300 via-purple-300 to-indigo-400'>
       <Navbar />
       <Landing />
-      
+      <Features />
+      <Team />
     </div>
   );
 }
