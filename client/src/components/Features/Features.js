@@ -28,7 +28,7 @@ const Features = () => {
       <p className=" text-4xl text-[#0D3D56] font-bold ml-48 mb-12">
         Features{" "}
       </p>
-      <div className="flex flex-row justify-center gap-10 px-20">
+      <div className="flex flex-row justify-center gap-10 px-20 mb-20">
         <FeaturesCard FeaturesData={FeaturesData[0]} />
         <FeaturesCard FeaturesData={FeaturesData[1]} />
         <FeaturesCard FeaturesData={FeaturesData[2]} />

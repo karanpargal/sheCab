@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Features from "./components/Features/Features";
 import Team from "./components/Team/Team";
-import FutureScope from "./components/FutureScope";
+import FutureScope from "./components/FutureScope/FutureScope";
 
 function App() {
   return (
