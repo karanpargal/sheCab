@@ -5,7 +5,7 @@ const Team = () => {
   const teamData = [
     {
       name: "Karan Pargal",
-      skills: "Fullstack Developer",
+      skills: "Full-stack Developer",
       image:
         "https://drive.google.com/uc?export=view&id=1K8QbLjaGeKFvTPAAMO5WPtvho24KxeOk",
       github: "https://www.github.com/karanpargal",
@@ -31,7 +31,7 @@ const Team = () => {
 
   return (
     <div className="mt-10 font-display" id="team">
-      <p className=" text-4xl text-[#0D3D56] font-bold ml-48 mb-12">Team </p>
+      <p className=" text-4xl text-darkerIndigo font-bold ml-48 mb-12">Team </p>
       <div className="flex flex-row justify-center gap-10 text-greys px-20 pb-20">
         <TeamCard teamData={teamData[0]} />
         <TeamCard teamData={teamData[1]} />

@@ -49,11 +49,11 @@ const BookCab = () => {
   const renderBooking = () => {
     if (driverBusy) {
       return (
-        <div>
+        <div className="font-bold text-lg ml-36">
           You are already busy with a ride!
           <button
             onClick={() => setDriverBusy(false)}
-            class="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+            class="inline-block rounded-lg bg-white ml-5 mt-4 px-4 py-1.5 text-base font-semibold leading-7 text-darkerIndigo shadow-sm hover:bg-blue-500 hover:ring-indigo-700 hover:text-white"
           >
             End Ride
             <span class="text-indigo-200" aria-hidden="true">
@@ -67,22 +67,13 @@ const BookCab = () => {
         <div class="mt-8 flex gap-x-4 sm:justify-center">
           <button
             onClick={getCustomer}
-            class="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+            class="inline-block rounded-lg bg-white mt-4 px-4 py-1.5 text-base font-semibold leading-7 text-darkerIndigo shadow-sm hover:bg-blue-500 hover:ring-indigo-700 hover:text-white"
           >
             Get Ride
             <span class="text-indigo-200" aria-hidden="true">
               &rarr;
             </span>
           </button>
-          <a
-            href="#"
-            class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-          >
-            Read about us
-            <span class="text-gray-400" aria-hidden="true">
-              &rarr;
-            </span>
-          </a>
         </div>
       );
     }

@@ -32,7 +32,7 @@ const Landing = () => {
   return (
     <div>
       <div
-        className="flex p-20 pt-60 pb-48 items-center justify-around justify-items-center justify-self-center"
+        className="flex p-20 pt-60 pb-20 items-center justify-around justify-items-center justify-self-center"
         id="landing"
       >
         <div className="mt-3 text-darkerIndigo">

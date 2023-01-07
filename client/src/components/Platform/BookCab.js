@@ -85,7 +85,7 @@ const BookCab = () => {
           </div>
           <button
             onClick={bookSheCab}
-            class="inline-block rounded-lg bg-indigo-600 mt-4 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+            class="inline-block rounded-lg bg-white mt-4 px-4 py-1.5 text-base font-semibold leading-7 text-darkerIndigo shadow-sm hover:bg-blue-500 hover:ring-indigo-700 hover:text-white"
           >
             Get your ride!
             <span class="text-indigo-200" aria-hidden="true">
