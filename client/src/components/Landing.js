@@ -59,7 +59,7 @@ const Landing = () => {
           </button>
         </div>
         <div className="mt-3">
-          <img className="w-96 h-96" src="https://seeklogo.com/images/C/Cab-logo-C0504F38D2-seeklogo.com.gif" alt=""/>
+          <img className="h-96" src="./logo_shecab.png" alt=""/>
         </div>
       </div>
       {renderCabBooking()}

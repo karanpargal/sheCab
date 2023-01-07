@@ -4,19 +4,19 @@ import FeaturesCard from "./FeaturesCard";
 const Features = () => {
   const FeaturesData = [
     {
-      Icon: "",
+      Icon: "./taxi-solid.svg",
       Heading: "Driver Policy",
       Description:
         "To empower women and to ensure safety, She-Cab provides you with trained Female Drivers",
     },
     {
-      Icon: "",
+      Icon: "./person-dress-solid.svg",
       Heading: "Passenger Policy",
       Description:
         "To ensure your comfort and safety She-Cab only allows Female Passengers",
     },
     {
-      Icon: "",
+      Icon: "./taxi.svg",
       Heading: "EV Cabs",
       Description:
         "To reduce carbon emissions and to save our environment, we use electric vehicles only as our cabs",
@@ -28,7 +28,7 @@ const Features = () => {
       <p className=" text-4xl text-[#0D3D56] font-bold ml-48 mb-12">
         Features{" "}
       </p>
-      <div className="flex flex-row justify-center gap-10 text-greys p-20">
+      <div className="flex flex-row justify-center gap-10 p-20">
         <FeaturesCard FeaturesData={FeaturesData[0]} />
         <FeaturesCard FeaturesData={FeaturesData[1]} />
         <FeaturesCard FeaturesData={FeaturesData[2]} />

@@ -63,9 +63,10 @@ const Navbar = () => {
   return (
     <nav class="m-0 px-4 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 backdrop-blur-sm ">
       <div class="container flex flex-wrap items-center justify-between mx-auto my-0">
-        <h1 class="self-center text-3xl font-semibold whitespace-nowrap ">
+        <img src="./logo_shecab.png" className="h-20 self-center"></img>
+        {/* <h1 class="self-center text-3xl font-semibold whitespace-nowrap ">
           SHE CAB
-        </h1>
+        </h1> */}
 
         <div class="flex space-x-4 md:order-2">
           <button
@@ -111,7 +112,7 @@ const Navbar = () => {
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul class="flex flex-col p-3 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:pt-2 md:text-sm md:font-medium md:border-0 ">
+          <ul class="flex flex-col p-3 mt-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:pt-2 md:text-sm md:font-medium md:border-0 ">
             <li>
               <a
                 href="#"
