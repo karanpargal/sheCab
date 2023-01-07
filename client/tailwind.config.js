@@ -11,6 +11,7 @@ module.exports = {
         SlateBlue:'#817DFF',
         RoseBonbon:'#F04B9E',
         darkerIndigo: '#0C374D',
+        Indigo:'#0D3D56',
       },
       fontFamily: {
         'ubuntu': ['Ubuntu', 'sans-serif']
