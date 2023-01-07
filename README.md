@@ -8,7 +8,7 @@ On our web-application, a female customer can find a cab to her destination and 
 
 ## How the WebApp Looks 🤜🔥🤛
 ![Logo](images/Logo.png)
-![Front-end](images/Landing%20Page.jpeg)
+![Front-end](images/frontend.png)
 
 
 ## How we built it 🔧
