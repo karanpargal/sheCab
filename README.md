@@ -1,4 +1,4 @@
-![SheBuilds](images/Cover.png) 
+![SheBuilds](https://shebuilds.devfolio.co/_next/imageurl=https%3A%2F%2Fassets.devfolio.co%2Fhackathons%2Fa64b077ec0f343dea35acbd9b16b2155%2Fassets%2Fcover%2F853.png&w=1440&q=100) 
 
 ## Inspiration💡
 We saw that in our college, female students usually avoid travelling in night due to cab issues which makes it harder for them. So, we decided to make an all female cab platform so they can travel safely.  
