@@ -1,4 +1,4 @@
-![Rookie-Hacks-II](images/Cover.png) 
+![SheBuilds](images/Cover.png) 
 
 ## Inspiration💡
 With expense split apps gaining more and more popularity, we aimed to design an expense split web application that would use blockchain to store the data instead of centralised database.  
