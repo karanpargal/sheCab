@@ -14,6 +14,10 @@ On our web-application, a female customer can find a cab to her destination and 
 
 On the blockchain side, the booking of cab takes place and payments are handled. This was built using solidity. The smart contract is deployed on polygon mumbai testnet(our first deployment there). On the front end side of things, we built the web app using react.js and tailwind css. 
 
+## Deployment
+Website: https://she-fiw7ic6ew-karanpargal.vercel.app/
+Smart Contract: https://mumbai.polygonscan.com/address/0x4e943296214C7Cbe87a4A95145007857663Db4Ea
+
 ## Tech Stack 🔨
 1. Solidity
 2. Smart Contracts
@@ -32,6 +36,7 @@ On the blockchain side, the booking of cab takes place and payments are handled.
 ## Accomplishments that we're proud of 🏅
 1. Successfully deployed smart contract on polygon testnet. 
 2. Created a functional web-application. 
+3. Successfully deployed web-application.
 
 ## What's next ⏭
  1. We plan to extend this to a mobile application for easier access. 
