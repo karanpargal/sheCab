@@ -41,15 +41,29 @@ const BookCab = () => {
       const address = await signer.getAddress();
       const tx1 = await cabContract.addCustomer(address);
       await tx1.wait();
+      setBookCab(true);
       const tx = await cabContract.bookCab();
       await tx.wait();
-      setBookCab(true);
+      
     } catch (err) {
       console.error(err);
     }
   };
 
   const renderBooking = () => {
+    if (bookCab) {
+      return (
+        <div>
+          <h1 class="text-2xl ml-64 mt-2 font-bold ">
+            Your Cab is booked!
+          </h1>
+          <p class="mt-6 text-lg leading-6 text-gray-500 sm:text-center">
+            Your cab will arrive in 10 minutes. Please be ready at the pickup
+            location.
+          </p>
+        </div>
+      );
+    }else{
     
       return (
         <div>
@@ -92,26 +106,14 @@ const BookCab = () => {
               &rarr;
             </span>
           </button>
-          {cabBooked}
         </div>
       );
+    }
 
   };
 
   const cabBooked = () => {
-    if (bookCab) {
-      return (
-        <div>
-          <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">
-            Your Cab is booked!
-          </h1>
-          <p class="mt-6 text-lg leading-6 text-gray-500 sm:text-center">
-            Your cab will arrive in 10 minutes. Please be ready at the pickup
-            location.
-          </p>
-        </div>
-      );
-    }
+    
   };
 
   useEffect(() => {
@@ -140,6 +142,7 @@ const BookCab = () => {
                 <strong>female.</strong>
               </p>
               {renderBooking()}
+              {cabBooked}
             </div>
             <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
               <svg
