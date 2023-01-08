@@ -15,7 +15,8 @@ On our web-application, a female customer can find a cab to her destination and 
 On the blockchain side, the booking of cab takes place and payments are handled. This was built using solidity. The smart contract is deployed on polygon mumbai testnet(our first deployment there). On the front end side of things, we built the web app using react.js and tailwind css. 
 
 ## Deployment
-Website: https://she-fiw7ic6ew-karanpargal.vercel.app/
+Website: https://she-cab.vercel.app/
+<br />
 Smart Contract: https://mumbai.polygonscan.com/address/0x4e943296214C7Cbe87a4A95145007857663Db4Ea
 
 ## Tech Stack 🔨
