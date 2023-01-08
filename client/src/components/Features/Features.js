@@ -7,13 +7,13 @@ const Features = () => {
       Icon: "./taxi-solid.svg",
       Heading: "Driver Policy",
       Description:
-        "To empower women and to ensure safety, She-Cab provides you with trained Female Drivers",
+        "To empower women and to ensure safety, SheCab provides you with trained Female Drivers",
     },
     {
       Icon: "./person-dress-solid.svg",
       Heading: "Passenger Policy",
       Description:
-        "To ensure your comfort and safety She-Cab only allows Female Passengers",
+        "To ensure your comfort and safety SheCab only allows Female Passengers",
     },
     {
       Icon: "./taxi.svg",

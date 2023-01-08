@@ -36,7 +36,7 @@ const Landing = () => {
         id="landing"
       >
         <div className="mt-3 text-darkerIndigo">
-          <h1 className=" text-4xl font-semibold ml-3 font-ubuntu">Let's make friends and ride safe!</h1>
+          <h1 className=" text-4xl font-semibold ml-3 font-ubuntu">No need to worry out,<br /> when SheCab has your way out</h1>
           <h2 className=" mt-2 ml-3 text-xl font-medium font-ubuntu mt-5">
             Book your SheCab Book your own cab or share with <br></br>others to
             save money and reduce carbon footprint.<br></br>
